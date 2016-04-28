@@ -10,5 +10,12 @@
   <%= @work.description %>
 </p>
 
-<%= link_to 'Edit', edit_work_path(@work) %> |
-<%= link_to 'Back', works_path %>
+<div>
+  <%= render @work.tasks %>
+  <div>
+    <%= render "tasks/form" %>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_work_path(@work), class: "ui inverted yellow button" %> |
+<%= link_to 'Back', works_path, class: "ui inverted orange button" %>
