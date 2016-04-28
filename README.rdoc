@@ -4,4 +4,5 @@ This is a project management app that I created with my Udemy rails course.
 
 == GEMS 
 
+semantic-ui-sass
 
