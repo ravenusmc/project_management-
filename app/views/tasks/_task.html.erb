@@ -1,2 +1,3 @@
 <p><%= task.content %></p>
 <%= link_to "Delete", work_task_path(@work, task.id), method: :delete, data: { confirm: "Are you Sure" }, class: "ui inverted red button" %>
+<%= link_to "Mark as Complete", complete_work_task_path(@work, task.id), method: :patch, class: "ui inverted orange button" %>
