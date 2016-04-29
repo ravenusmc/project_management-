@@ -1,6 +1,7 @@
 == README
 
-This is a project management app that I created with my Udemy rails course. 
+This is a project management app that I created with my Udemy rails course. This may be the only course that I did not actually finish this app. I just was not into making a project managment app and it seemed similar to the first project that I did.  
+
 
 == GEMS 
 
