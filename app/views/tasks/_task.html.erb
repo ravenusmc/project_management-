@@ -1,3 +1,59 @@
 <p><%= task.content %></p>
 <%= link_to "Delete", work_task_path(@work, task.id), method: :delete, data: { confirm: "Are you Sure" }, class: "ui inverted red button" %>
 <%= link_to "Mark as Complete", complete_work_task_path(@work, task.id), method: :patch, class: "ui inverted orange button" %>
+
+<div>
+  <% if task.completed? %>
+    <div>
+      <%= link_to "Mark as Complete", complete_work_task_path(@work, task.id), method: :patch, class: "ui inverted orange button" %>
+    </div>
+    <div>
+      <p style="opacity: 0.4;"><strike><%= task.content %></strike></p>
+    </div>
+    <div>
+      <%= link_to "Delete", work_task_path(@work, task.id), method: :delete, data: { confirm: "Are you Sure" }, class: "ui inverted red button" %>
+    </div>
+  <% else %>
+    <div>
+      <%= link_to "Mark as Complete", complete_work_task_path(@work, task.id), method: :patch, class: "ui inverted orange button" %>
+    </div>
+    <div>
+      <p><%= task.content %></p>
+    </div>
+    <div>
+      <%= link_to "Delete", work_task_path(@work, task.id), method: :delete, data: { confirm: "Are you Sure" }, class: "ui inverted red button" %>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
